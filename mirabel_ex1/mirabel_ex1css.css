@@ -1,0 +1,47 @@
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: white;
+  font-size: 100%;
+}
+.box:before {
+  left: 5px;
+}
+.box:after {
+  right: 5px;
+}
+.box .box-inner {
+  position: relative;
+  border: 2px solid #b78846;
+  padding: 40px;
+  content: "";
+  clear: both;
+  display: table;
+}
+.box .box-inner:before, .box .box-inner:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #b78846;
+  border: 2px solid #b78846;
+  line-height: 12px;
+  bottom: -2px;
+
+}
+.box .box-inner:before {
+  left: -2px;
+}
+.box .box-inner:after {
+  right: -2px;
+}
+
